@@ -7,10 +7,12 @@ Gem::Specification.new do |spec|
   spec.name          = "league_of_legends"
   spec.version       = LeagueOfLegends::VERSION
   spec.authors       = ["Francisco Orvalho"]
-  spec.email         = ["francisco.orvalho@surfdome.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.email         = ["francisco.orvalho@gmail.com"]
+  spec.summary       = %q{Implementation of the LoL API}
+  spec.description   = %q{This gem implements the League Of Legends API (currently in open beta). It will continue to be updated as the API evolves.
+
+This product is not endorsed, certified or otherwise approved in any way by Riot Games, Inc. or any of its affiliates.}
+  spec.homepage      = "http://github.com/forvalho/league_of_legends"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
