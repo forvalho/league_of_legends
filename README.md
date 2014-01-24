@@ -1,6 +1,8 @@
 # LeagueOfLegends
 
-TODO: Write a gem description
+This gem implements the League Of Legends API (currently in open beta). It will continue to be updated as the API evolves.
+
+This product is not endorsed, certified or otherwise approved in any way by Riot Games, Inc. or any of its affiliates.
 
 ## Installation
 
