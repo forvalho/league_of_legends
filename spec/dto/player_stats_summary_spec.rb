@@ -22,7 +22,7 @@ describe LeagueOfLegends::DTO::PlayerStatsSummary do
     expect(dto.wins).to eq 13
     expect(dto.losses).to eq 0
     expect(dto.modify_date).to eq Time.new(2013,11,25,14,26,36)
-    expect(dto.aggregated_stats.is_a?(LeagueOfLegends::DTO::AggregatedStats)).to eq true
+    expect(dto.aggregated_stats).to be_an_instance_of ::LeagueOfLegends::DTO::AggregatedStats
   end
 
   it "has a version" do

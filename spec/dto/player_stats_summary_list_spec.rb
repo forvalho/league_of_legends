@@ -54,10 +54,10 @@ describe ::LeagueOfLegends::DTO::PlayerStatsSummaryList do
 
   it "has attributes" do
     expect(dto.summoner_id).to eq 50519866
-    expect(dto.player_stat_summaries.is_a? Array).to eq true
+    expect(dto.player_stat_summaries).to be_an_instance_of Array
   
     dto.player_stat_summaries.each do |pss|
-      expect(pss.is_a? ::LeagueOfLegends::DTO::PlayerStatsSummary).to eq true
+      expect(pss).to be_an_instance_of ::LeagueOfLegends::DTO::PlayerStatsSummary
     end
   end
 
