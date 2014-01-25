@@ -1,6 +1,12 @@
+require 'league_of_legends/dto/aggregated_stats'
+
 module ::LeagueOfLegends
   module DTO
     class PlayerStatsSummary
+
+      def self.version
+        ::LeagueOfLegends::DTO::PlayerStatsSummaryList.version
+      end
 
       attr_reader :player_stat_summary_type, :wins,
         :losses, :modify_date, :aggregated_stats
@@ -11,10 +17,6 @@ module ::LeagueOfLegends
         @losses = attributes[:losses].to_i
         @modify_date = Time.at(attributes[:modifyDate]/1000)
         @aggregated_stats = ::LeagueOfLegends::DTO::AggregatedStats.new(attributes[:aggregatedStats])
-      end
-
-      def self.version
-        ::LeagueOfLegends::DTO::PlayerStatsSummaryList.version
       end
 
     end

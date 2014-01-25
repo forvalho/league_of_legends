@@ -2,6 +2,10 @@ module ::LeagueOfLegends
   module DTO
     class AggregatedStats
 
+      def self.version
+        ::LeagueOfLegends::DTO::PlayerStatsSummaryList.version
+      end
+
       attr_reader :average_assists, :average_champions_killed, 
         :average_combat_player_score, :average_node_capture, 
         :average_node_capture_assist, :average_node_neutralize, 
@@ -83,10 +87,6 @@ module ::LeagueOfLegends
         @total_triple_kills = attributes[:totalTripleKills].to_i
         @total_turrets_killed = attributes[:totalTurretsKilled].to_i
         @total_unreal_kills = attributes[:totalUnrealKills].to_i
-      end
-
-      def self.version
-        ::LeagueOfLegends::DTO::PlayerStatsSummaryList.version
       end
 
     end
