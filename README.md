@@ -18,6 +18,10 @@ Or install it yourself as:
 
     $ gem install league_of_legends
 
+## Usage
+
+The gem is still not usable at this point. It is a work in progress! :)
+
 ## Contributing
 
 1. Fork it ( http://github.com/forvalho/league_of_legends/fork )
