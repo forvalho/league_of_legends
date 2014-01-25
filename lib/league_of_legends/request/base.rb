@@ -1,21 +1,10 @@
+require "net/http"
+require "uri"
+
 module ::LeagueOfLegends
   module Request
     class Base
       require 'net/http'
-
-      # https://prod.api.pvp.net/api/lol/
-      # euw/
-      # v1.3/summoner/
-      # 1234,5678/masteries?api_key=0c78469b-b773-4b35-9f6a-00d7fe964290
-
-      # url = URI.parse('http://www.example.com/index.html')
-      # req = Net::HTTP::Get.new(url.path)
-      # res = Net::HTTP.start(url.host, url.port) {|http|
-      #   http.request(req)
-      # }
-      # puts res.body
-
-      # Net::HTTP::Get.new(url.to_s)
 
       def self.options
         @options ||= default_options
@@ -42,6 +31,49 @@ module ::LeagueOfLegends
 
       def self.api_key
         ::LeagueOfLegends::Api.key
+      end
+
+      def initialize options = {}
+        @options = self.class.default_options.merge(options)
+      end
+
+      def response
+        @response ||= send_request
+
+        case @response.code.to_i
+        when 200 then
+          self.class.dto_class.new(@response.body)
+        else
+          @response.message
+        end
+      end
+
+      protected
+
+      def base_url
+        [
+          ::LeagueOfLegends::Api.base_url, 
+          self.class.region, 
+          self.class.version
+        ].join('/')
+      end
+
+      def url_parameters
+        [
+          "?api_key=#{self.class.api_key}"
+        ].join('&')
+      end
+
+
+      private
+
+      def url
+        base_url + url_parameters
+      end
+
+      def send_request
+        uri = URI.parse url
+        Net::HTTP.get_response uri
       end
 
     end

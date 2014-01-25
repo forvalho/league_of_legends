@@ -15,8 +15,7 @@ describe ::LeagueOfLegends::Request::Stats::BySummoner::Summary do
   end
 
   it "can be sent and get a response" do
-    pending "needs the attributes to pass first"
-    # expect(dto.response).to eq 'something'
+    expect(request.response).to be_an_instance_of ::LeagueOfLegends::DTO::PlayerStatsSummaryList
   end
 
 end

@@ -10,12 +10,18 @@ module ::LeagueOfLegends
           attr_reader :summoner_id, :options
 
           def initialize summoner_id, options = {}
+            super(options)
             @summoner_id = summoner_id
-            @options = self.class.default_options.merge(options)
           end
 
           def self.dto_class
             ::LeagueOfLegends::DTO::PlayerStatsSummaryList
+          end
+
+          protected
+
+          def base_url
+            super + "/stats/by-summoner/#{summoner_id}/summary"
           end
 
         end
