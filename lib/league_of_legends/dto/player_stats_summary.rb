@@ -13,6 +13,10 @@ module ::LeagueOfLegends
         @aggregated_stats = ::LeagueOfLegends::DTO::AggregatedStats.new(attributes[:aggregatedStats])
       end
 
+      def self.version
+        ::LeagueOfLegends::DTO::PlayerStatsSummaryList.version
+      end
+
     end
   end
 end

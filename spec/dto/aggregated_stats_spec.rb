@@ -18,5 +18,9 @@ describe ::LeagueOfLegends::DTO::AggregatedStats do
     expect(dto.total_neutral_minions_killed).to eq 339
     expect(dto.total_assists).to eq 75
   end
+
+  it "has a version" do
+    expect(described_class.version).to eq 'v1.2'
+  end
   
 end

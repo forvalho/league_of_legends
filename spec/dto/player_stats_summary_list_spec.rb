@@ -61,5 +61,9 @@ describe ::LeagueOfLegends::DTO::PlayerStatsSummaryList do
       expect(pss.is_a? ::LeagueOfLegends::DTO::PlayerStatsSummary).to eq true
     end
   end
+
+  it "has a version" do
+    expect(described_class.version).to eq 'v1.2'
+  end
   
 end

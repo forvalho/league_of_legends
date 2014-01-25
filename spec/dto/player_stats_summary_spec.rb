@@ -25,4 +25,8 @@ describe LeagueOfLegends::DTO::PlayerStatsSummary do
     expect(dto.aggregated_stats.is_a?(LeagueOfLegends::DTO::AggregatedStats)).to eq true
   end
 
+  it "has a version" do
+    expect(described_class.version).to eq 'v1.2'
+  end
+
 end

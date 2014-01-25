@@ -2,6 +2,8 @@ module ::LeagueOfLegends
   module DTO
     class PlayerStatsSummaryList < ::LeagueOfLegends::DTO::Base
 
+      VERSION = 'v1.2'
+
       attr_reader :summoner_id, :player_stat_summaries
 
       def initialize json
@@ -10,6 +12,10 @@ module ::LeagueOfLegends
         @player_stat_summaries = attributes[:playerStatSummaries].map do |pss|
           ::LeagueOfLegends::DTO::PlayerStatsSummary.new(pss)
         end
+      end
+
+      def self.version
+        VERSION
       end
 
       private

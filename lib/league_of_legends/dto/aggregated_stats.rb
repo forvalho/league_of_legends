@@ -25,7 +25,7 @@ module ::LeagueOfLegends
         :total_quadra_kills, :total_sessions_lost, :total_sessions_played, 
         :total_sessions_won, :total_triple_kills, :total_turrets_killed, 
         :total_unreal_kills
-        
+
       def initialize attributes
         @average_assists = attributes[:averageAssists].to_i
         @average_champions_killed = attributes[:averageChampionsKilled].to_i
@@ -83,6 +83,10 @@ module ::LeagueOfLegends
         @total_triple_kills = attributes[:totalTripleKills].to_i
         @total_turrets_killed = attributes[:totalTurretsKilled].to_i
         @total_unreal_kills = attributes[:totalUnrealKills].to_i
+      end
+
+      def self.version
+        ::LeagueOfLegends::DTO::PlayerStatsSummaryList.version
       end
 
     end
