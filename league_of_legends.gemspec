@@ -10,6 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["francisco.orvalho@gmail.com"]
   spec.summary       = %q{Implementation of the LoL API}
   spec.description   = %q{This gem implements the League Of Legends API (currently in open beta). It will continue to be updated as the API evolves.
+    Please see the README at https://github.com/forvalho/league_of_legends/blob/master/README.md
 
 This product is not endorsed, certified or otherwise approved in any way by Riot Games, Inc. or any of its affiliates.}
   spec.homepage      = "http://github.com/forvalho/league_of_legends"
