@@ -9,8 +9,8 @@ module ::LeagueOfLegends
 
           attr_reader :summoner_id, :options
 
-          def initialize summoner_id, options = {}
-            super(options)
+          def initialize api, summoner_id, options = {}
+            super(api, options)
             @summoner_id = summoner_id
           end
 
