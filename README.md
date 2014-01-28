@@ -26,7 +26,7 @@ The gem is still a work in progress and has limited functionality.
     lol_api = ::LeagueOfLegends::Api.new <api key>
 
     # get all available request types
-    lol_api.available_request
+    lol_api.available_requests
 
     # execute a request
     result_dto = lol_api.get(:summoner_stats_summary, <summoner id>)
