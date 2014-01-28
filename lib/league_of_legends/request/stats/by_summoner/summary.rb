@@ -7,7 +7,7 @@ module ::LeagueOfLegends
       module BySummoner
         class Summary < ::LeagueOfLegends::Request::Base
 
-          attr_reader :summoner_id, :options
+          attr_reader :summoner_id
 
           def initialize api, summoner_id, options = {}
             super(api, options)
@@ -21,7 +21,7 @@ module ::LeagueOfLegends
           protected
 
           def base_url
-            super + "/stats/by-summoner/#{summoner_id}/summary"
+            super << "stats/by-summoner/#{summoner_id}/summary"
           end
 
         end

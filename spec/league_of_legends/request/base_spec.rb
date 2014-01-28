@@ -11,10 +11,10 @@ describe ::LeagueOfLegends::Request::Base do
     end
     req_test = ReqTest.new api
 
-    expect(ReqTest.respond_to? :options).to be_true
     expect(ReqTest.respond_to? :default_options).to be_true
     expect(ReqTest.respond_to? :dto_class).to be_true
     expect(ReqTest.respond_to? :version).to be_true
+    expect(req_test.respond_to? :options).to be_true
     expect(req_test.respond_to? :region).to be_true
     expect(req_test.respond_to? :api_key).to be_true
     expect(req_test.respond_to? :response).to be_true

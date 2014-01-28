@@ -6,9 +6,8 @@ module ::LeagueOfLegends
     class Base
       require 'net/http'
 
-      def self.options
-        @options ||= default_options
-      end
+
+      attr_reader :options
 
       def self.default_options
         {
@@ -58,19 +57,19 @@ module ::LeagueOfLegends
           api.base_url, 
           region, 
           self.class.version
-        ].join('/')
+        ]
       end
 
       def url_parameters
         [
-          "?api_key=#{api_key}"
-        ].join('&')
+          "api_key=#{api_key}"
+        ]
       end
 
       private
 
       def url
-        base_url + url_parameters
+        "#{base_url.join('/')}?#{url_parameters.join('&')}"
       end
 
       def send_request
