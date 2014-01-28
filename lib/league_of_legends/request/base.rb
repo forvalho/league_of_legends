@@ -25,15 +25,16 @@ module ::LeagueOfLegends
         dto_class.version
       end
 
-      def self.region
+      def region
          options[:region]
       end
 
-      def self.api_key
-        ::LeagueOfLegends::Api.key
+      def api_key
+        api.key
       end
 
-      def initialize options = {}
+      def initialize api, options = {}
+        @api = api
         @options = self.class.default_options.merge(options)
       end
 
@@ -50,20 +51,21 @@ module ::LeagueOfLegends
 
       protected
 
+      attr_reader :api
+
       def base_url
         [
-          ::LeagueOfLegends::Api.base_url, 
-          self.class.region, 
+          api.base_url, 
+          region, 
           self.class.version
         ].join('/')
       end
 
       def url_parameters
         [
-          "?api_key=#{self.class.api_key}"
+          "?api_key=#{api_key}"
         ].join('&')
       end
-
 
       private
 
