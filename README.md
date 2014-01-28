@@ -20,14 +20,19 @@ Or install it yourself as:
 
 ## Usage
 
-The gem is still not (properly) usable at this point. It is a work in progress! :)
+The gem is still a work in progress and has limited functionality.
 
-To work with it (until the next version comes out!), change the code in lib/league_of_legends/api.rb to return your actual API key.
+    # create a new instance of the API
+    lol_api = ::LeagueOfLegends::Api.new <api key>
 
-Then you can do:
+    # get all available request types
+    lol_api.available_request
 
-    sss_request = ::LeagueOfLegends::Request::Stats::BySummoner::Summary.new <summoner_id>
-    sss_request.response # => ::LeagueOfLegends::DTO::PlayerStatsSummaryList
+    # execute a request
+    result_dto = lol_api.get(:summoner_stats_summary, <summoner id>)
+
+
+In this example, the DTO returned is a `::LeagueOfLegends::DTO::PlayerStatsSummaryList`.
 
 You can read about each Request and DTO at http://developer.riotgames.com/api/methods
 
