@@ -1,5 +1,6 @@
 require 'league_of_legends/request/stats/by_summoner/summary'
 
+
 describe ::LeagueOfLegends::Request::Stats::BySummoner::Summary do
 
   let(:api) { ::LeagueOfLegends::Api.new 'a1a1a1a1-a1a1-a1a1-a1a1-a1a1a1a1a1a1' }
@@ -17,8 +18,9 @@ describe ::LeagueOfLegends::Request::Stats::BySummoner::Summary do
   end
 
   it "can be sent and get a response" do
-    pending "requires internet connection"
-    expect(request.response).to be_an_instance_of ::LeagueOfLegends::DTO::PlayerStatsSummaryList
+    VCR.use_cassette('summary_spec stats by_summoner') do
+      expect(request.response).to be_an_instance_of ::LeagueOfLegends::DTO::PlayerStatsSummaryList
+    end
   end
 
 end

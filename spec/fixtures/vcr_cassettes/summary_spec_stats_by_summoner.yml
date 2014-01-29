@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://prod.api.pvp.net/api/lol/euw/v1.2/stats/by-summoner/50519866/summary?api_key=a1a1a1a1-a1a1-a1a1-a1a1-a1a1a1a1a1a1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+      Host:
+      - prod.api.pvp.net
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, PUT
+      Access-Control-Allow-Origin:
+      - '*'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Wed, 29 Jan 2014 18:28:16 GMT
+      Server:
+      - Jetty(9.1.0.v20131115)
+      X-Newrelic-App-Data:
+      - PxQFWFFSDwQTVVdUBAgPUkYdFGQHBDcQUQxLA1tMXV1dORYzVBBGBxdCdhUSEVFRRRAEPhhQRw84HlpcDjpMB0UVZE1OCRoAb0pKFVAVQD5LVE5MFRZVXl8KBBBrHkQTCVxZXQcUKgZsTUsXVVVVQEpHFVEfUR9SSgYHUFNbCwQJXE1PBh0VBV1TAQFTXwYAUgReAV0IFm8=
+      Content-Length:
+      - '676'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"summonerId":50519866,"playerStatSummaries":[{"playerStatSummaryType":"CoopVsAI","wins":14,"modifyDate":1389972770000,"aggregatedStats":{"totalChampionKills":84,"totalMinionKills":1678,"totalTurretsKilled":32,"totalNeutralMinionsKilled":347,"totalAssists":86}},{"playerStatSummaryType":"OdinUnranked","wins":0,"modifyDate":1389972770000,"aggregatedStats":{}},{"playerStatSummaryType":"Unranked","wins":17,"modifyDate":1390734105000,"aggregatedStats":{"totalChampionKills":251,"totalMinionKills":2195,"totalTurretsKilled":42,"totalNeutralMinionsKilled":473,"totalAssists":167}},{"playerStatSummaryType":"Unranked3x3","wins":0,"modifyDate":1389972770000,"aggregatedStats":{}}]}'
+    http_version: 
+  recorded_at: Wed, 29 Jan 2014 18:28:16 GMT
+recorded_with: VCR 2.8.0

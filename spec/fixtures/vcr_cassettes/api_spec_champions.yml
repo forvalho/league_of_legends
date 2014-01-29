@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://prod.api.pvp.net/api/lol/euw/v1.1/champion?api_key=a1a1a1a1-a1a1-a1a1-a1a1-a1a1a1a1a1a1&freeToPlay=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+      Host:
+      - prod.api.pvp.net
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, PUT
+      Access-Control-Allow-Origin:
+      - '*'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Wed, 29 Jan 2014 18:20:21 GMT
+      Server:
+      - Jetty(9.1.0.v20131115)
+      X-Newrelic-App-Data:
+      - PxQFWFFSDwQTVVdUBAgPUkYdFGQHBDcQUQxLA1tMXV1dORYzVBBGBxdCdhUSEVFRRRAEPhhQRw84HlpcDjpMB0UVZE1OCRoDb0paCVAMQwsLWBVNVk0IHwRKUlsPBwMjSQUaHlNKQVZVAApbCAsBUwJWXANXAwBAOQ==
+      Content-Length:
+      - '1879'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"champions":[{"id":22,"name":"Ashe","active":true,"attackRank":7,"defenseRank":3,"magicRank":2,"difficultyRank":4,"botEnabled":true,"freeToPlay":true,"botMmEnabled":true,"rankedPlayEnabled":true},{"id":114,"name":"Fiora","active":true,"attackRank":10,"defenseRank":4,"magicRank":2,"difficultyRank":5,"botEnabled":false,"freeToPlay":true,"botMmEnabled":false,"rankedPlayEnabled":true},{"id":126,"name":"Jayce","active":true,"attackRank":8,"defenseRank":4,"magicRank":3,"difficultyRank":8,"botEnabled":false,"freeToPlay":true,"botMmEnabled":false,"rankedPlayEnabled":true},{"id":85,"name":"Kennen","active":true,"attackRank":6,"defenseRank":4,"magicRank":7,"difficultyRank":5,"botEnabled":false,"freeToPlay":true,"botMmEnabled":false,"rankedPlayEnabled":true},{"id":117,"name":"Lulu","active":true,"attackRank":4,"defenseRank":5,"magicRank":7,"difficultyRank":7,"botEnabled":false,"freeToPlay":true,"botMmEnabled":false,"rankedPlayEnabled":true},{"id":56,"name":"Nocturne","active":true,"attackRank":9,"defenseRank":5,"magicRank":2,"difficultyRank":6,"botEnabled":false,"freeToPlay":true,"botMmEnabled":false,"rankedPlayEnabled":true},{"id":80,"name":"Pantheon","active":true,"attackRank":9,"defenseRank":4,"magicRank":3,"difficultyRank":5,"botEnabled":false,"freeToPlay":true,"botMmEnabled":false,"rankedPlayEnabled":true},{"id":133,"name":"Quinn","active":true,"attackRank":9,"defenseRank":4,"magicRank":2,"difficultyRank":7,"botEnabled":false,"freeToPlay":true,"botMmEnabled":false,"rankedPlayEnabled":true},{"id":37,"name":"Sona","active":true,"attackRank":5,"defenseRank":2,"magicRank":8,"difficultyRank":1,"botEnabled":true,"freeToPlay":true,"botMmEnabled":true,"rankedPlayEnabled":true},{"id":5,"name":"XinZhao","active":true,"attackRank":8,"defenseRank":6,"magicRank":3,"difficultyRank":3,"botEnabled":true,"freeToPlay":true,"botMmEnabled":true,"rankedPlayEnabled":true}]}'
+    http_version: 
+  recorded_at: Wed, 29 Jan 2014 18:20:21 GMT
+recorded_with: VCR 2.8.0

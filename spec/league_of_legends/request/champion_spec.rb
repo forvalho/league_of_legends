@@ -25,8 +25,9 @@ describe ::LeagueOfLegends::Request::Champion do
   end
 
   it "can be sent and get a response" do
-    pending "requires internet connection"
-    expect(request(true).response).to be_an_instance_of ::LeagueOfLegends::DTO::ChampionList
+    VCR.use_cassette('champion_spec f2p') do
+      expect(request(true).response).to be_an_instance_of ::LeagueOfLegends::DTO::ChampionList
+    end
   end
 
 end
