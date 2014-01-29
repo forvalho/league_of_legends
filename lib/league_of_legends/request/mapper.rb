@@ -26,7 +26,10 @@ module ::LeagueOfLegends
           @map ||= {
             summoner_stats_summary: {
               class: ::LeagueOfLegends::Request::Stats::BySummoner::Summary,
-              },
+            },
+            champions: {
+              class: ::LeagueOfLegends::Request::Champion,
+            },
           }
         end
 
