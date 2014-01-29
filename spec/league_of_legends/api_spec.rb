@@ -6,7 +6,7 @@ describe ::LeagueOfLegends::Api do
 ' }
 
   it "has access to an API key" do
-    pending "testing with real key"
+    pending ""
     expect(api.key).to eq 'a1a1a1a1-a1a1-a1a1-a1a1-a1a1a1a1a1a1'
   end
 
@@ -21,6 +21,7 @@ describe ::LeagueOfLegends::Api do
   it "can send requests and receive a response" do
     pending "requires internet connection"
     expect(api.get(:summoner_stats_summary, 12345)).to be_an_instance_of ::LeagueOfLegends::DTO::PlayerStatsSummaryList
+    expect(api.get(:champions, true)).to be_an_instance_of ::LeagueOfLegends::DTO::ChampionList
   end
 
 end
