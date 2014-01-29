@@ -31,6 +31,9 @@ The gem is still a work in progress and has limited functionality.
     # execute a request
     result_dto = lol_api.get(:summoner_stats_summary, <summoner id>)
 
+    # total number of victories
+    result_dto.player_stat_summaries.map(&:wins).reduce(&:+)
+
 
 In this example, the DTO returned is a `::LeagueOfLegends::DTO::PlayerStatsSummaryList`.
 
