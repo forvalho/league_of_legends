@@ -44,7 +44,7 @@ module ::LeagueOfLegends
         raise ArgumentError.new 'wrong number of arguments (0 for 1)'
       when String
         if key =~ /^\h{8}(-\h{4}){3}-\h{12}$/
-          @key = key
+          @key = key.chomp
         else
           raise ArgumentError.new 'key with incorrect format'
         end
@@ -57,7 +57,7 @@ module ::LeagueOfLegends
       require 'uri'
 
       if base_url =~ /^#{URI::regexp}$/o
-        @base_url = base_url
+        @base_url = base_url.chomp
       else
         raise ArgumentError.new 'expected a valid URL'
       end

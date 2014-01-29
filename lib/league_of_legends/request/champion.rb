@@ -19,7 +19,7 @@ module ::LeagueOfLegends
       protected
 
       def base_url
-        super << "/champion"
+        super << "champion"
       end
 
       def url_parameters

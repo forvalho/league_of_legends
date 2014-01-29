@@ -13,8 +13,9 @@ module ::LeagueOfLegends
 
       def initialize json
         attributes = build_attributes json
+
         @summoner_id = attributes[:summonerId].to_i
-        @player_stat_summaries = attributes[:playerStatSummaries].map do |pss|
+        @player_stat_summaries = attributes[:playerStatSummaries].to_a.map do |pss|
           ::LeagueOfLegends::DTO::PlayerStatsSummary.new(pss)
         end
       end
