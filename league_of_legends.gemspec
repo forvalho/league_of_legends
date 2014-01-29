@@ -23,4 +23,7 @@ This product is not endorsed, certified or otherwise approved in any way by Riot
 
   spec.add_development_dependency "bundler", "~> 1.5"
   spec.add_development_dependency "rake"
+  spec.add_development_dependency "rspec", "~> 2.14.1"
+  spec.add_development_dependency "vcr", "~> 2.8"
+  spec.add_development_dependency "webmock", ">= 1.8.0", "< 1.16"
 end
