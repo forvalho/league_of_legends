@@ -1,4 +1,4 @@
-# league_of_legends
+# league_of_legends [![Build Status](https://travis-ci.org/forvalho/league_of_legends.png?branch=master)](https://travis-ci.org/forvalho/league_of_legends)
 
 This gem implements the League Of Legends API (currently in open beta). It will continue to be updated as the API evolves.
 
