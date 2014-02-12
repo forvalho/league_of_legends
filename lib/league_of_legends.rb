@@ -1,5 +1,4 @@
-require "league_of_legends/version"
-
-module LeagueOfLegends
-  # Your code goes here...
-end
+require 'league_of_legends/api'
+require 'league_of_legends/dto'
+require 'league_of_legends/request'
+require 'league_of_legends/version'
