@@ -34,7 +34,7 @@ module ::LeagueOfLegends
               class: ::LeagueOfLegends::Request::Champion,
             },
             recent_games: {
-              class: ::LeagueOfLegends::Request::Game,
+              class: ::LeagueOfLegends::Request::Game::BySummoner::Recent,
             },
           }
         end

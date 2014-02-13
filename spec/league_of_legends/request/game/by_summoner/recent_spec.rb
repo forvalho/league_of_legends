@@ -1,6 +1,6 @@
-require_relative '../spec_helper'
+require_relative '../../../spec_helper'
 
-describe ::LeagueOfLegends::Request::Game do
+describe ::LeagueOfLegends::Request::Game::BySummoner::Recent do
 
   let(:api) { ::LeagueOfLegends::Api.new 'a1a1a1a1-a1a1-a1a1-a1a1-a1a1a1a1a1a1' }
 
