@@ -27,6 +27,9 @@ module ::LeagueOfLegends
             summoner_stats_summary: {
               class: ::LeagueOfLegends::Request::Stats::BySummoner::Summary,
             },
+            summoner_stats_ranked: {
+              class: ::LeagueOfLegends::Request::Stats::BySummoner::Ranked,
+            },
             champions: {
               class: ::LeagueOfLegends::Request::Champion,
             },
