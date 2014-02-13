@@ -1,0 +1,44 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://prod.api.pvp.net/api/lol/euw/v1.2/stats/by-summoner/31747504/ranked?api_key=a1a1a1a1-a1a1-a1a1-a1a1-a1a1a1a1a1a1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+      Host:
+      - prod.api.pvp.net
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, PUT
+      Access-Control-Allow-Origin:
+      - '*'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Thu, 13 Feb 2014 01:33:04 GMT
+      Server:
+      - Jetty(9.1.0.v20131115)
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '{"summonerId":31747504,"modifyDate":1391990692000,"champions":[{"id":59,"name":"JarvanIV","stats":{"totalSessionsPlayed":2,"totalSessionsLost":1,"totalSessionsWon":1,"totalChampionKills":8,"totalDamageDealt":256026,"totalDamageTaken":62473,"mostChampionKillsPerSession":4,"totalMinionKills":112,"totalDoubleKills":0,"totalTripleKills":0,"totalQuadraKills":0,"totalPentaKills":0,"totalUnrealKills":0,"totalDeathsPerSession":9,"totalGoldEarned":25091,"mostSpellsCast":0,"totalTurretsKilled":4,"totalPhysicalDamageDealt":211641,"totalMagicDamageDealt":24715,"totalFirstBlood":0,"totalAssists":39,"maxChampionsKilled":4,"maxNumDeaths":6}},{"id":89,"name":"Leona","stats":{"totalSessionsPlayed":3,"totalSessionsLost":1,"totalSessionsWon":2,"totalChampionKills":4,"totalDamageDealt":79593,"totalDamageTaken":70077,"mostChampionKillsPerSession":3,"totalMinionKills":60,"totalDoubleKills":0,"totalTripleKills":0,"totalQuadraKills":0,"totalPentaKills":0,"totalUnrealKills":0,"totalDeathsPerSession":20,"totalGoldEarned":26551,"mostSpellsCast":0,"totalTurretsKilled":1,"totalPhysicalDamageDealt":24074,"totalMagicDamageDealt":52174,"totalFirstBlood":0,"totalAssists":43,"maxChampionsKilled":3,"maxNumDeaths":8}},{"id":58,"name":"Renekton","stats":{"totalSessionsPlayed":3,"totalSessionsLost":1,"totalSessionsWon":2,"totalChampionKills":12,"totalDamageDealt":424630,"totalDamageTaken":80991,"mostChampionKillsPerSession":7,"totalMinionKills":594,"totalDoubleKills":2,"totalTripleKills":0,"totalQuadraKills":0,"totalPentaKills":0,"totalUnrealKills":0,"totalDeathsPerSession":9,"totalGoldEarned":35129,"mostSpellsCast":0,"totalTurretsKilled":7,"totalPhysicalDamageDealt":352076,"totalMagicDamageDealt":69583,"totalFirstBlood":0,"totalAssists":26,"maxChampionsKilled":7,"maxNumDeaths":5}},{"id":412,"name":"Thresh","stats":{"totalSessionsPlayed":15,"totalSessionsLost":6,"totalSessionsWon":9,"totalChampionKills":31,"totalDamageDealt":452623,"totalDamageTaken":277192,"mostChampionKillsPerSession":9,"totalMinionKills":409,"totalDoubleKills":2,"totalTripleKills":0,"totalQuadraKills":0,"totalPentaKills":0,"totalUnrealKills":0,"totalDeathsPerSession":65,"totalGoldEarned":135349,"mostSpellsCast":0,"totalTurretsKilled":5,"totalPhysicalDamageDealt":119867,"totalMagicDamageDealt":331869,"totalFirstBlood":0,"totalAssists":203,"maxChampionsKilled":9,"maxNumDeaths":11}},{"id":55,"name":"Katarina","stats":{"totalSessionsPlayed":1,"totalSessionsLost":1,"totalSessionsWon":0,"totalChampionKills":0,"totalDamageDealt":52289,"totalDamageTaken":21083,"mostChampionKillsPerSession":0,"totalMinionKills":78,"totalDoubleKills":0,"totalTripleKills":0,"totalQuadraKills":0,"totalPentaKills":0,"totalUnrealKills":0,"totalDeathsPerSession":10,"totalGoldEarned":5220,"mostSpellsCast":0,"totalTurretsKilled":0,"totalPhysicalDamageDealt":6154,"totalMagicDamageDealt":45371,"totalFirstBlood":0,"totalAssists":4,"maxChampionsKilled":0,"maxNumDeaths":10}},{"id":84,"name":"Akali","stats":{"totalSessionsPlayed":2,"totalSessionsLost":0,"totalSessionsWon":2,"totalChampionKills":10,"totalDamageDealt":139566,"totalDamageTaken":30841,"mostChampionKillsPerSession":6,"totalMinionKills":178,"totalDoubleKills":1,"totalTripleKills":0,"totalQuadraKills":0,"totalPentaKills":0,"totalUnrealKills":0,"totalDeathsPerSession":5,"totalGoldEarned":17237,"mostSpellsCast":0,"totalTurretsKilled":0,"totalPhysicalDamageDealt":83164,"totalMagicDamageDealt":55762,"totalFirstBlood":0,"totalAssists":15,"maxChampionsKilled":6,"maxNumDeaths":4}},{"id":154,"name":"Zac","stats":{"totalSessionsPlayed":3,"totalSessionsLost":0,"totalSessionsWon":3,"totalChampionKills":15,"totalDamageDealt":357108,"totalDamageTaken":64680,"mostChampionKillsPerSession":8,"totalMinionKills":281,"totalDoubleKills":1,"totalTripleKills":0,"totalQuadraKills":0,"totalPentaKills":0,"totalUnrealKills":0,"totalDeathsPerSession":6,"totalGoldEarned":33214,"mostSpellsCast":0,"totalTurretsKilled":2,"totalPhysicalDamageDealt":48774,"totalMagicDamageDealt":296717,"totalFirstBlood":0,"totalAssists":35,"maxChampionsKilled":8,"maxNumDeaths":4}},{"id":222,"name":"Jinx","stats":{"totalSessionsPlayed":2,"totalSessionsLost":1,"totalSessionsWon":1,"totalChampionKills":10,"totalDamageDealt":274968,"totalDamageTaken":37226,"mostChampionKillsPerSession":6,"totalMinionKills":398,"totalDoubleKills":2,"totalTripleKills":0,"totalQuadraKills":0,"totalPentaKills":0,"totalUnrealKills":0,"totalDeathsPerSession":11,"totalGoldEarned":24264,"mostSpellsCast":0,"totalTurretsKilled":5,"totalPhysicalDamageDealt":269081,"totalMagicDamageDealt":5029,"totalFirstBlood":0,"totalAssists":19,"maxChampionsKilled":6,"maxNumDeaths":7}},{"id":60,"name":"Elise","stats":{"totalSessionsPlayed":1,"totalSessionsLost":1,"totalSessionsWon":0,"totalChampionKills":7,"totalDamageDealt":76681,"totalDamageTaken":22186,"mostChampionKillsPerSession":7,"totalMinionKills":91,"totalDoubleKills":0,"totalTripleKills":0,"totalQuadraKills":0,"totalPentaKills":0,"totalUnrealKills":0,"totalDeathsPerSession":7,"totalGoldEarned":9439,"mostSpellsCast":0,"totalTurretsKilled":0,"totalPhysicalDamageDealt":34085,"totalMagicDamageDealt":41382,"totalFirstBlood":0,"totalAssists":1,"maxChampionsKilled":7,"maxNumDeaths":7}},{"id":1,"name":"Annie","stats":{"totalSessionsPlayed":2,"totalSessionsLost":2,"totalSessionsWon":0,"totalChampionKills":12,"totalDamageDealt":155218,"totalDamageTaken":54175,"mostChampionKillsPerSession":6,"totalMinionKills":185,"totalDoubleKills":1,"totalTripleKills":0,"totalQuadraKills":0,"totalPentaKills":0,"totalUnrealKills":0,"totalDeathsPerSession":21,"totalGoldEarned":25548,"mostSpellsCast":0,"totalTurretsKilled":1,"totalPhysicalDamageDealt":21504,"totalMagicDamageDealt":131360,"totalFirstBlood":0,"totalAssists":26,"maxChampionsKilled":6,"maxNumDeaths":14}},{"id":0,"name":"Combined","stats":{"totalSessionsPlayed":34,"totalSessionsLost":14,"totalSessionsWon":20,"totalChampionKills":109,"killingSpree":63,"totalDamageDealt":2268702,"totalDamageTaken":720924,"mostChampionKillsPerSession":9,"totalMinionKills":2386,"totalDoubleKills":9,"totalTripleKills":0,"totalQuadraKills":0,"totalPentaKills":0,"totalUnrealKills":0,"totalDeathsPerSession":163,"totalGoldEarned":337042,"mostSpellsCast":0,"totalTurretsKilled":25,"totalPhysicalDamageDealt":1170420,"totalMagicDamageDealt":1053962,"totalNeutralMinionsKilled":468,"totalFirstBlood":0,"totalAssists":411,"totalHeal":133458,"maxLargestKillingSpree":8,"maxLargestCriticalStrike":668,"maxChampionsKilled":9,"maxNumDeaths":14,"maxTimePlayed":3197,"maxTimeSpentLiving":1978,"normalGamesPlayed":0,"rankedSoloGamesPlayed":0,"rankedPremadeGamesPlayed":0,"botGamesPlayed":0}}]}'
+    http_version: 
+  recorded_at: Thu, 13 Feb 2014 01:33:06 GMT
+recorded_with: VCR 2.8.0

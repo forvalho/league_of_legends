@@ -4,4 +4,4 @@ require 'league_of_legends/request/champion'
 require 'league_of_legends/request/mapper'
 
 require 'league_of_legends/request/stats/by_summoner/summary'
-# require 'league_of_legends/request/stats/by_summoner/ranked'
+require 'league_of_legends/request/stats/by_summoner/ranked'
