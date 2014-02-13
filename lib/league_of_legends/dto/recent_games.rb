@@ -3,7 +3,7 @@ require 'league_of_legends/dto/game'
 
 module ::LeagueOfLegends
   module DTO
-    class RecentGames
+    class RecentGames < ::LeagueOfLegends::DTO::Base
 
       def self.version
         'v1.3'

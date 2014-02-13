@@ -2,14 +2,13 @@ require_relative '../spec_helper'
 
 describe ::LeagueOfLegends::DTO::Player do
 
-  let(:json) { '' }
+  let(:json) { { :summonerId => 46493314, :teamId => 100, :championId => 7 } }
   let(:dto){ described_class.new(json) }
 
   it "has attributes" do
-    pending "need JSON result"
-    expect(dto.champion_id).to eq 
-    expect(dto.summoner_id).to eq 
-    expect(dto.team_id).to eq 
+    expect(dto.champion_id).to eq 7
+    expect(dto.summoner_id).to eq 46493314
+    expect(dto.team_id).to eq 100
   end
 
   it "has a version" do

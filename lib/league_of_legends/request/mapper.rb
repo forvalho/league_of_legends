@@ -33,6 +33,9 @@ module ::LeagueOfLegends
             champions: {
               class: ::LeagueOfLegends::Request::Champion,
             },
+            recent_games: {
+              class: ::LeagueOfLegends::Request::Game,
+            },
           }
         end
 
