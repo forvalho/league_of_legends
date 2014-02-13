@@ -1,5 +1,4 @@
-require 'league_of_legends/request/stats/by_summoner/summary'
-
+require_relative '../../../spec_helper'
 
 describe ::LeagueOfLegends::Request::Stats::BySummoner::Summary do
 

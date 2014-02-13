@@ -1,4 +1,4 @@
-require 'league_of_legends/request/mapper'
+require_relative '../spec_helper'
 
 describe ::LeagueOfLegends::Request::Mapper do
 

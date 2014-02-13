@@ -1,4 +1,4 @@
-require 'league_of_legends/dto/player_stats_summary_list'
+require_relative '../spec_helper'
 
 describe ::LeagueOfLegends::DTO::PlayerStatsSummaryList do
 

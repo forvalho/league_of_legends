@@ -1,6 +1,4 @@
-require 'league_of_legends/api'
-require 'league_of_legends/request/champion'
-require 'league_of_legends/dto/champion_list'
+require_relative '../spec_helper'
 
 describe ::LeagueOfLegends::Request::Champion do
 

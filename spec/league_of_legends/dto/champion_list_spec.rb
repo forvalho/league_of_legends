@@ -1,4 +1,4 @@
-require 'league_of_legends/dto/champion_list'
+require_relative '../spec_helper'
 
 describe ::LeagueOfLegends::DTO::ChampionList do
 
