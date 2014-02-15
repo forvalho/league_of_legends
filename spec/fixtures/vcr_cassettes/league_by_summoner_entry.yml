@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://prod.api.pvp.net/api/lol/euw/v2.3/league/by-summoner/31747504/entry?api_key=a1a1a1a1-a1a1-a1a1-a1a1-a1a1a1a1a1a1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - '*/*'
+      User-Agent:
+      - Ruby
+      Host:
+      - prod.api.pvp.net
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Headers:
+      - Content-Type
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, PUT
+      Access-Control-Allow-Origin:
+      - '*'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Sat, 15 Feb 2014 21:23:31 GMT
+      Server:
+      - Jetty(9.1.0.v20131115)
+      Content-Length:
+      - '280'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: '[{"playerOrTeamId":"31747504","playerOrTeamName":"IXIOneManArmyIXI","leagueName":"Ashe''s
+        Cavaliers","queueType":"RANKED_SOLO_5x5","tier":"SILVER","rank":"II","leaguePoints":0,"wins":19,"isHotStreak":false,"isVeteran":false,"isFreshBlood":false,"isInactive":false,"lastPlayed":-1}]'
+    http_version: 
+  recorded_at: Sat, 15 Feb 2014 21:23:31 GMT
+recorded_with: VCR 2.8.0

@@ -39,6 +39,9 @@ module ::LeagueOfLegends
             league_challenger: {
               class: ::LeagueOfLegends::Request::League::Challenger,
             },
+            league_summoner_entry: {
+              class: ::LeagueOfLegends::Request::League::BySummoner::Entry,
+            },
           }
         end
 
