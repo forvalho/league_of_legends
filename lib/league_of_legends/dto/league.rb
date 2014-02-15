@@ -11,7 +11,11 @@ module ::LeagueOfLegends
       attr_reader :entries, :name, :participant_id, :queue, :tier
 
       def initialize json
-        attributes = build_attributes json
+        if json.is_a? String
+          attributes = build_attributes json
+        else
+          attributes = json
+        end
 
         @entries = attributes[:entries].map do |entry|
           ::LeagueOfLegends::DTO::LeagueItem.new(entry)
