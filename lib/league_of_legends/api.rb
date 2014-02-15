@@ -1,4 +1,4 @@
-require 'league_of_legends/request/all'
+require 'league_of_legends/request'
 
 module ::LeagueOfLegends
   class Api

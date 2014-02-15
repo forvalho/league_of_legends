@@ -1,5 +1,4 @@
-require 'league_of_legends/request/base'
-require 'league_of_legends/dto/player_stats_summary_list'
+require 'league_of_legends/dto'
 
 module ::LeagueOfLegends
   module Request

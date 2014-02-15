@@ -1,4 +1,4 @@
-require 'league_of_legends'
+require 'league_of_legends/dto'
 
 module ::LeagueOfLegends
   module Request
