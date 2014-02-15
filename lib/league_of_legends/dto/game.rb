@@ -1,5 +1,4 @@
-require 'league_of_legends/dto/player'
-require 'league_of_legends/dto/raw_stats'
+require 'league_of_legends/dto'
 
 module ::LeagueOfLegends
   module DTO

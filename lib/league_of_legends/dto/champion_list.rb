@@ -1,5 +1,4 @@
-require 'league_of_legends/dto/base'
-require 'league_of_legends/dto/champion'
+require 'league_of_legends/dto'
 
 module ::LeagueOfLegends
   module DTO

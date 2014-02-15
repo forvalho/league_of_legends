@@ -1,4 +1,4 @@
-require 'league_of_legends/dto/aggregated_stats'
+require 'league_of_legends/dto'
 
 module ::LeagueOfLegends
   module DTO
