@@ -3,7 +3,7 @@ require 'league_of_legends/dto'
 module ::LeagueOfLegends
   module Request
     module League
-      module BySummoner
+      class BySummoner
         class Entry < ::LeagueOfLegends::Request::Base
 
           attr_reader :summoner_id
