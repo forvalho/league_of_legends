@@ -36,6 +36,9 @@ module ::LeagueOfLegends
             recent_games: {
               class: ::LeagueOfLegends::Request::Game::BySummoner::Recent,
             },
+            league_challenger: {
+              class: ::LeagueOfLegends::Request::League::Challenger,
+            },
           }
         end
 
