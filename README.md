@@ -1,4 +1,4 @@
-# league_of_legends [![Build Status](https://travis-ci.org/forvalho/league_of_legends.png?branch=master)](https://travis-ci.org/forvalho/league_of_legends)
+# league_of_legends [![Build Status](https://travis-ci.org/forvalho/league_of_legends.png?branch=master)](https://travis-ci.org/forvalho/league_of_legends) [![Dependency Status](https://gemnasium.com/forvalho/league_of_legends.png)](https://gemnasium.com/forvalho/league_of_legends) [![Code Climate](https://codeclimate.com/github/forvalho/league_of_legends.png)](https://codeclimate.com/github/forvalho/league_of_legends)
 
 This gem implements the League Of Legends API (currently in open beta). It will continue to be updated as the API evolves.
 
