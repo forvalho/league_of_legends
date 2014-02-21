@@ -9,8 +9,10 @@ module ::LeagueOfLegends
       end
 
       attr_reader :losses, :progress, :target, :time_left_to_play_millis, :wins
-      
+
       def initialize attributes
+        return if attributes.nil?
+
         @losses = attributes[:losses]
         @progress = attributes[:progress]
         @target = attributes[:target]

@@ -15,6 +15,7 @@ module ::LeagueOfLegends
           attributes = build_attributes json
         else
           attributes = json
+          return if attributes.nil?
         end
 
         @entries = attributes[:entries].map do |entry|

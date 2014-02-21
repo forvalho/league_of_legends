@@ -6,28 +6,30 @@ module ::LeagueOfLegends
         ::LeagueOfLegends::DTO::RecentGames.version
       end
 
-      attr_reader :assists, :barracks_killed, :champions_killed, :combat_player_score, 
-      :consumables_purchased, :damage_dealt_player, :double_kills, :first_blood, :gold, 
-      :gold_earned, :gold_spent, :item_0, :item_1, :item_2, :item_3, :item_4, :item_5, 
-      :item_6, :items_purchased, :killing_sprees, :largest_critical_strike, 
-      :largest_killing_spree, :largest_multi_kill, :legendary_items_created, :level, 
-      :magic_damage_dealt_player, :magic_damage_dealt_to_champions, :magic_damage_taken, 
-      :minions_denied, :minions_killed, :neutral_minions_killed, 
-      :neutral_minions_killed_enemy_jungle, :neutral_minions_killed_your_jungle, 
-      :nexus_killed, :node_capture, :node_capture_assist, :node_neutralize, 
-      :node_neutralize_assist, :num_deaths, :num_items_bought, :objective_player_score, 
-      :penta_kills, :physical_damage_dealt_player, :physical_damage_dealt_to_champions, 
-      :physical_damage_taken, :quadra_kills, :sight_wards_bought, :spell_1_cast, 
-      :spell_2_cast, :spell_3_cast, :spell_4_cast, :summon_spell_1_cast, 
-      :summon_spell_2_cast, :super_monster_killed, :team, :team_objective, 
-      :time_played, :total_damage_dealt, :total_damage_dealt_to_champions, 
-      :total_damage_taken, :total_heal, :total_player_score, :total_score_rank, 
-      :total_time_crowd_control_dealt, :total_units_healed, :triple_kills, 
-      :true_damage_dealt_player, :true_damage_dealt_to_champions, :true_damage_taken, 
-      :turrets_killed, :unreal_kills, :victory_point_total, :vision_wards_bought, 
+      attr_reader :assists, :barracks_killed, :champions_killed, :combat_player_score,
+      :consumables_purchased, :damage_dealt_player, :double_kills, :first_blood, :gold,
+      :gold_earned, :gold_spent, :item_0, :item_1, :item_2, :item_3, :item_4, :item_5,
+      :item_6, :items_purchased, :killing_sprees, :largest_critical_strike,
+      :largest_killing_spree, :largest_multi_kill, :legendary_items_created, :level,
+      :magic_damage_dealt_player, :magic_damage_dealt_to_champions, :magic_damage_taken,
+      :minions_denied, :minions_killed, :neutral_minions_killed,
+      :neutral_minions_killed_enemy_jungle, :neutral_minions_killed_your_jungle,
+      :nexus_killed, :node_capture, :node_capture_assist, :node_neutralize,
+      :node_neutralize_assist, :num_deaths, :num_items_bought, :objective_player_score,
+      :penta_kills, :physical_damage_dealt_player, :physical_damage_dealt_to_champions,
+      :physical_damage_taken, :quadra_kills, :sight_wards_bought, :spell_1_cast,
+      :spell_2_cast, :spell_3_cast, :spell_4_cast, :summon_spell_1_cast,
+      :summon_spell_2_cast, :super_monster_killed, :team, :team_objective,
+      :time_played, :total_damage_dealt, :total_damage_dealt_to_champions,
+      :total_damage_taken, :total_heal, :total_player_score, :total_score_rank,
+      :total_time_crowd_control_dealt, :total_units_healed, :triple_kills,
+      :true_damage_dealt_player, :true_damage_dealt_to_champions, :true_damage_taken,
+      :turrets_killed, :unreal_kills, :victory_point_total, :vision_wards_bought,
       :ward_killed, :ward_placed, :win
 
       def initialize attributes
+        return if attributes.nil?
+
         @assists = attributes[:assists].to_i
         @barracks_killed = attributes[:barracksKilled].to_i
         @champions_killed = attributes[:championsKilled].to_i

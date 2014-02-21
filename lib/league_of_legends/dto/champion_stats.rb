@@ -11,6 +11,8 @@ module ::LeagueOfLegends
       attr_reader :id, :name, :stats
 
       def initialize attributes
+        return if attributes.nil?
+
         @id = attributes[:id].to_i
         @name = attributes[:name]
         @stats = ::LeagueOfLegends::DTO::AggregatedStats.new(attributes[:stats])

@@ -12,6 +12,8 @@ module ::LeagueOfLegends
         :losses, :modify_date, :aggregated_stats
 
       def initialize attributes
+        return if attributes.nil?
+
         @player_stat_summary_type = attributes[:playerStatSummaryType]
         @wins = attributes[:wins].to_i
         @losses = attributes[:losses].to_i

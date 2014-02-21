@@ -11,6 +11,8 @@ module ::LeagueOfLegends
       attr_reader :is_fresh_blood, :is_hot_streak, :is_inactive, :is_veteran, :last_played, :league_name, :league_points, :mini_series, :player_or_team_id, :player_or_team_name, :queue_type, :rank, :tier, :wins
 
       def initialize attributes
+        return if attributes.nil?
+
         @is_fresh_blood = attributes[:isFreshBlood]
         @is_hot_streak = attributes[:isHotStreak]
         @is_inactive = attributes[:isInactive]

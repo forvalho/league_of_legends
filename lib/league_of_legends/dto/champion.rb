@@ -12,6 +12,8 @@ module ::LeagueOfLegends
         :ranked_play_enabled
 
       def initialize attributes
+        return if attributes.nil?
+
         @active = attributes[:active]
         @attack_rank = attributes[:attackRank]
         @bot_enabled = attributes[:botEnabled]

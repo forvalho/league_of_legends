@@ -6,31 +6,33 @@ module ::LeagueOfLegends
         ::LeagueOfLegends::DTO::PlayerStatsSummaryList.version
       end
 
-      attr_reader :average_assists, :average_champions_killed, 
-        :average_combat_player_score, :average_node_capture, 
-        :average_node_capture_assist, :average_node_neutralize, 
-        :average_node_neutralize_assist, :average_num_deaths, 
-        :average_objective_player_score, :average_team_objective, 
-        :average_total_player_score, :bot_games_layed, :killing_spree, 
-        :max_assists, :max_champions_killed, :max_combat_player_score, 
-        :max_largest_critical_strike, :max_largest_killing_spree, 
-        :max_node_capture, :max_node_capture_assist, :max_node_neutralize, 
-        :max_node_neutralize_assist, :max_num_deaths, 
-        :max_objective_player_score, :max_team_objective, :max_time_played, 
-        :max_time_spent_living, :max_total_player_score, 
-        :most_champion_kills_per_session, :most_spells_cast, 
-        :normal_games_played, :ranked_premade_games_played, 
-        :ranked_solo_games_played, :total_assists, :total_champion_kills, 
-        :total_damage_dealt, :total_damage_taken, :total_deaths_per_session, 
-        :total_double_kills, :total_first_blood, :total_gold_earned, 
-        :total_heal, :total_magic_damage_dealt, :total_minion_kills, 
-        :total_neutral_minions_killed, :total_node_capture, 
-        :total_node_neutralize, :total_penta_kills, :total_physical_damage_dealt, 
-        :total_quadra_kills, :total_sessions_lost, :total_sessions_played, 
-        :total_sessions_won, :total_triple_kills, :total_turrets_killed, 
+      attr_reader :average_assists, :average_champions_killed,
+        :average_combat_player_score, :average_node_capture,
+        :average_node_capture_assist, :average_node_neutralize,
+        :average_node_neutralize_assist, :average_num_deaths,
+        :average_objective_player_score, :average_team_objective,
+        :average_total_player_score, :bot_games_layed, :killing_spree,
+        :max_assists, :max_champions_killed, :max_combat_player_score,
+        :max_largest_critical_strike, :max_largest_killing_spree,
+        :max_node_capture, :max_node_capture_assist, :max_node_neutralize,
+        :max_node_neutralize_assist, :max_num_deaths,
+        :max_objective_player_score, :max_team_objective, :max_time_played,
+        :max_time_spent_living, :max_total_player_score,
+        :most_champion_kills_per_session, :most_spells_cast,
+        :normal_games_played, :ranked_premade_games_played,
+        :ranked_solo_games_played, :total_assists, :total_champion_kills,
+        :total_damage_dealt, :total_damage_taken, :total_deaths_per_session,
+        :total_double_kills, :total_first_blood, :total_gold_earned,
+        :total_heal, :total_magic_damage_dealt, :total_minion_kills,
+        :total_neutral_minions_killed, :total_node_capture,
+        :total_node_neutralize, :total_penta_kills, :total_physical_damage_dealt,
+        :total_quadra_kills, :total_sessions_lost, :total_sessions_played,
+        :total_sessions_won, :total_triple_kills, :total_turrets_killed,
         :total_unreal_kills
 
       def initialize attributes
+        return if attributes.nil?
+
         @average_assists = attributes[:averageAssists].to_i
         @average_champions_killed = attributes[:averageChampionsKilled].to_i
         @average_combat_player_score = attributes[:averageCombatPlayerScore].to_i

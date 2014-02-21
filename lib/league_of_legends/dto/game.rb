@@ -8,11 +8,13 @@ module ::LeagueOfLegends
         ::LeagueOfLegends::DTO::RecentGames.version
       end
 
-      attr_reader :champion_id, :create_date, :fellow_players, 
-      :game_id, :game_mode, :game_type, :invalid, :level, :map_id, 
+      attr_reader :champion_id, :create_date, :fellow_players,
+      :game_id, :game_mode, :game_type, :invalid, :level, :map_id,
       :spell_1, :spell_2, :stats, :sub_type, :team_id
 
       def initialize attributes
+        return if attributes.nil?
+
         @champion_id = attributes[:championId].to_i
         @create_date = Time.at(attributes[:createDate]/1000)
         @fellow_players = attributes[:fellowPlayers].map do |player|
