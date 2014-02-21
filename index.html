@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>League of legends by forvalho</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>League of legends</h1>
+        <p>An implementation of the League of Legends (LoL) API</p>
+
+        <p class="view"><a href="https://github.com/forvalho/league_of_legends">View the Project on GitHub <small>forvalho/league_of_legends</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/forvalho/league_of_legends/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/forvalho/league_of_legends/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/forvalho/league_of_legends">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="league_of_legends---" class="anchor" href="#league_of_legends---"><span class="octicon octicon-link"></span></a>league_of_legends <a href="https://travis-ci.org/forvalho/league_of_legends"><img src="https://travis-ci.org/forvalho/league_of_legends.png?branch=master" alt="Build Status"></a> <a href="https://gemnasium.com/forvalho/league_of_legends"><img src="https://gemnasium.com/forvalho/league_of_legends.png" alt="Dependency Status"></a> <a href="https://codeclimate.com/github/forvalho/league_of_legends"><img src="https://codeclimate.com/github/forvalho/league_of_legends.png" alt="Code Climate"></a>
+</h1>
+
+<p>This gem implements the League Of Legends API (currently in open beta). It will continue to be updated as the API evolves.</p>
+
+<p>This product is not endorsed, certified or otherwise approved in any way by Riot Games, Inc. or any of its affiliates.</p>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Add this line to your application's Gemfile:</p>
+
+<pre><code>gem 'league_of_legends'
+</code></pre>
+
+<p>And then execute:</p>
+
+<pre><code>$ bundle
+</code></pre>
+
+<p>Or install it yourself as:</p>
+
+<pre><code>$ gem install league_of_legends
+</code></pre>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>The gem is still a work in progress and has limited functionality.</p>
+
+<pre><code># create a new instance of the API
+lol_api = ::LeagueOfLegends::Api.new &lt;api key&gt;
+
+# get all available request types
+lol_api.available_requests
+
+# execute a request
+result_dto = lol_api.get(:summoner_stats_summary, &lt;summoner id&gt;)
+
+# total number of victories
+result_dto.player_stat_summaries.map(&amp;:wins).reduce(&amp;:+)
+</code></pre>
+
+<p>In this example, the DTO returned is a <code>::LeagueOfLegends::DTO::PlayerStatsSummaryList</code>.</p>
+
+<p>You can read about each Request and DTO at <a href="http://developer.riotgames.com/api/methods">http://developer.riotgames.com/api/methods</a></p>
+
+<h2>
+<a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<ol>
+<li>Fork it ( <a href="http://github.com/forvalho/league_of_legends/fork">http://github.com/forvalho/league_of_legends/fork</a> )</li>
+<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>
+<li>Commit your changes (<code>git commit -am 'Add some feature'</code>)</li>
+<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
+<li>Create new Pull Request</li>
+</ol>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/forvalho">forvalho</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
