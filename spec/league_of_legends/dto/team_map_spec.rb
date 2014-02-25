@@ -58,7 +58,7 @@ describe ::LeagueOfLegends::DTO::TeamMap do
   let(:dto){ described_class.new(json) }
 
   it "has attributes" do
-    dto.get.each_pair do |team_id, team_dto|
+    dto.teams.each_pair do |team_id, team_dto|
       expect(team_id).to eq "TEAM-90e87e50-5131-11e3-ad58-782bcb4ce61a"
       expect(team_dto).to be_an_instance_of ::LeagueOfLegends::DTO::Team
     end

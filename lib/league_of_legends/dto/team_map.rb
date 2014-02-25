@@ -8,12 +8,12 @@ module ::LeagueOfLegends
         ::LeagueOfLegends::DTO::Team.version
       end
 
-      attr_reader :get
+      attr_reader :teams
 
       def initialize json
         attributes = build_attributes json
 
-        @get = attributes.each_with_object({}) do |(team_id, team_dto), map|
+        @teams = attributes.each_with_object({}) do |(team_id, team_dto), map|
           map[team_id.to_s] = ::LeagueOfLegends::DTO::Team.new(team_dto)
         end
       end
