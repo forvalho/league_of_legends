@@ -2,7 +2,7 @@ require_relative '../spec_helper'
 
 describe ::LeagueOfLegends::Request::Base do
 
-  let(:api) { ::LeagueOfLegends::Api.new 'a1a1a1a1-a1a1-a1a1-a1a1-a1a1a1a1a1a1' }
+  let(:api) { ::LeagueOfLegends::Api.new TEST_API_KEY }
 
   it "exposes methods to it's children" do
     class ReqTest < described_class

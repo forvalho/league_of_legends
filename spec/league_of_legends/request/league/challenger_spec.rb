@@ -2,7 +2,7 @@ require_relative '../../spec_helper'
 
 describe ::LeagueOfLegends::Request::League::Challenger do
 
-  let(:api) { ::LeagueOfLegends::Api.new 'a1a1a1a1-a1a1-a1a1-a1a1-a1a1a1a1a1a1' }
+  let(:api) { ::LeagueOfLegends::Api.new TEST_API_KEY }
 
   def request type
     described_class.new(api, type)

@@ -2,7 +2,7 @@ require_relative '../../../spec_helper'
 
 describe ::LeagueOfLegends::Request::League::BySummoner::Entry do
 
-  let(:api) { ::LeagueOfLegends::Api.new 'a1a1a1a1-a1a1-a1a1-a1a1-a1a1a1a1a1a1' }
+  let(:api) { ::LeagueOfLegends::Api.new TEST_API_KEY }
 
   let(:request) { described_class.new api, 31747504 }
 
