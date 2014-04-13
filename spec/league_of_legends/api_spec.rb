@@ -19,10 +19,14 @@ describe ::LeagueOfLegends::Api do
 
   it "can send requests and receive a response" do
     VCR.use_cassette('api_spec summoner_stats_summary') do
-      expect(api.get(:summoner_stats_summary, 50519866)).to be_an_instance_of ::LeagueOfLegends::DTO::PlayerStatsSummaryList
+      expect(api.get(:summoner_stats_summary, 50_519_866)).to(
+        be_an_instance_of ::LeagueOfLegends::DTO::PlayerStatsSummaryList
+      )
     end
     VCR.use_cassette('api_spec champions') do
-      expect(api.get(:champions, true)).to be_an_instance_of ::LeagueOfLegends::DTO::ChampionList
+      expect(api.get(:champions, true)).to(
+        be_an_instance_of ::LeagueOfLegends::DTO::ChampionList
+      )
     end
   end
 

@@ -55,7 +55,7 @@ describe ::LeagueOfLegends::DTO::TeamMap do
       "createDate": 1384875907000
     }})
   }
-  let(:dto){ described_class.new(json) }
+  let(:dto) { described_class.new(json) }
 
   it "has attributes" do
     dto.teams.each_pair do |team_id, team_dto|

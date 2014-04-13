@@ -2,7 +2,8 @@ require_relative '../spec_helper'
 
 describe ::LeagueOfLegends::DTO::Champion do
 
-  let(:attributes) { {
+  let(:attributes) do
+    {
       botMmEnabled: false,
       defenseRank: 4,
       attackRank: 3,
@@ -14,7 +15,8 @@ describe ::LeagueOfLegends::DTO::Champion do
       active: true,
       freeToPlay: false,
       magicRank: 8
-  } }
+    }
+  end
   let(:dto) { described_class.new(attributes) }
 
   it "has attributes" do

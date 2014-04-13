@@ -55,7 +55,7 @@ describe ::LeagueOfLegends::DTO::TeamList do
       "createDate": 1384875907000
     }])
   }
-  let(:dto){ described_class.new(json) }
+  let(:dto) { described_class.new(json) }
 
   it "has attributes" do
     expect(dto.teams.size).to eq 1

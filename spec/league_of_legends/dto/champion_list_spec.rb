@@ -2,7 +2,7 @@ require_relative '../spec_helper'
 
 describe ::LeagueOfLegends::DTO::ChampionList do
 
-  json = '{"champions": 
+  json = '{"champions":
   [
     {
       "botMmEnabled": false,
@@ -44,7 +44,7 @@ describe ::LeagueOfLegends::DTO::ChampionList do
       "magicRank": 8
     }
   ]}'
-  let(:dto){ described_class.new(json) }
+  let(:dto) { described_class.new(json) }
 
   it "has attributes" do
     expect(dto.champions).to be_an_instance_of Array

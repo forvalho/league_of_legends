@@ -12,7 +12,7 @@ describe ::LeagueOfLegends::Request::Stats::BySummoner::Ranked do
     expect(request.region).to eq 'euw'
     expect(request.api_key).to be_an_instance_of String
     expect(request.api_key.length).to eq 36
-    
+
     expect(request.summoner_id).to eq 31747504
   end
 

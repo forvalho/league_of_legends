@@ -4,7 +4,7 @@ describe ::LeagueOfLegends::Request::Team::BySummoner do
 
   let(:api) { ::LeagueOfLegends::Api.new TEST_API_KEY }
 
-  def request summoner_id
+  def request(summoner_id)
     described_class.new(api, summoner_id)
   end
 
@@ -18,7 +18,8 @@ describe ::LeagueOfLegends::Request::Team::BySummoner do
 
   it "can be sent and get a response"# do
   #   VCR.use_cassette('champion_spec f2p') do
-  #     expect(request(true).response).to be_an_instance_of ::LeagueOfLegends::DTO::ChampionList
+  #     expect(request(true).response).to
+  #       be_an_instance_of ::LeagueOfLegends::DTO::ChampionList
   #   end
   # end
 
