@@ -1,7 +1,6 @@
 module ::LeagueOfLegends
   module DTO
     class MatchHistorySummary
-
       def self.version
         ::LeagueOfLegends::DTO::Team.version
       end
@@ -9,7 +8,7 @@ module ::LeagueOfLegends
       attr_reader :assists, :date, :deaths, :game_id, :game_mode, :invalid,
       :kills, :map_id, :opposing_team_kills, :opposing_team_name, :win
 
-      def initialize attributes
+      def initialize(attributes)
         return if attributes.nil?
 
         @assists = attributes[:assists]
@@ -24,7 +23,6 @@ module ::LeagueOfLegends
         @opposing_team_name = attributes[:opposingTeamName]
         @win = attributes[:win]
       end
-
     end
   end
 end
