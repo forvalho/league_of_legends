@@ -6,7 +6,7 @@ module ::LeagueOfLegends
         'v2.2'
       end
 
-      attr_reader :x, :create_date, :full_id, :last_game_date, :last_join_date, :last_joined_ranked_team_queue_date, :match_history, :message_of_day, :modify_date, :name, :roster, :second_last_join_date, :status, :tag, :team_stat_summary, :third_last_join_date
+      attr_reader :create_date, :full_id, :last_game_date, :last_join_date, :last_joined_ranked_team_queue_date, :match_history, :message_of_day, :modify_date, :name, :roster, :second_last_join_date, :status, :tag, :team_stat_summary, :third_last_join_date
 
       def initialize attributes
         return if attributes.nil?
